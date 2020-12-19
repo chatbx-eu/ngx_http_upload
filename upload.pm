@@ -19,7 +19,7 @@ package upload;
 
 ## CONFIGURATION -----------------------------------------------------
 
-my $external_secret = 'it-is-secret';
+my $external_secret = '$ENV{"UPLOAD_SECRET"}';
 my $uri_prefix_components = 0;
 my $file_mode = 0640;
 my $dir_mode  = 0750;
